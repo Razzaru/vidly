@@ -1,0 +1,17 @@
+﻿@model Vidly.ViewModels.MoviesViewModel
+@{
+    ViewBag.Title = "Customers";
+}
+
+
+<div class="row">
+    <table class="table table-bordered table-hover"  style="margin-top: 40px;>
+        <th>Movies</th>
+        @foreach (var movie in @Model.Movies)
+        {
+            <tr>
+                <td>movie.Name</td>
+            </tr>
+        }
+    </table>
+</div>
