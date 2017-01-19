@@ -32,7 +32,7 @@ namespace Vidly.Controllers
         [Route("details/{id: int}")]
         public ActionResult Details(int? id)
         {
-                var cst = _context.Customers.SingleOrDefault(c => c.Id == id);
+                var cst = _context.Customers.Include(c => c.MembershipType).SingleOrDefault(c => c.Id == id);
                 if (cst != null)
                 {
                     return View(cst);
