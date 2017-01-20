@@ -205,9 +205,22 @@
     <Compile Include="Migrations\201701192051085_SomeMgrtn.Designer.cs">
       <DependentUpon>201701192051085_SomeMgrtn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701200828264_AddGenresTableAndMovieTableExtending.cs" />
+    <Compile Include="Migrations\201701200828264_AddGenresTableAndMovieTableExtending.Designer.cs">
+      <DependentUpon>201701200828264_AddGenresTableAndMovieTableExtending.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701200830019_SeedGenresTable.cs" />
+    <Compile Include="Migrations\201701200830019_SeedGenresTable.Designer.cs">
+      <DependentUpon>201701200830019_SeedGenresTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701200847330_AddNumberInStockColumnToMovies.cs" />
+    <Compile Include="Migrations\201701200847330_AddNumberInStockColumnToMovies.Designer.cs">
+      <DependentUpon>201701200847330_AddNumberInStockColumnToMovies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -276,6 +289,7 @@
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -306,6 +320,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701192051085_SomeMgrtn.resx">
       <DependentUpon>201701192051085_SomeMgrtn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701200828264_AddGenresTableAndMovieTableExtending.resx">
+      <DependentUpon>201701200828264_AddGenresTableAndMovieTableExtending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701200830019_SeedGenresTable.resx">
+      <DependentUpon>201701200830019_SeedGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701200847330_AddNumberInStockColumnToMovies.resx">
+      <DependentUpon>201701200847330_AddNumberInStockColumnToMovies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

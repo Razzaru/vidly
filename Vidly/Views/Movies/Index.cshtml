@@ -1,15 +1,17 @@
-﻿@model Vidly.ViewModels.MoviesViewModel
+﻿@model IEnumerable<Vidly.Models.Movie>
 @{
     ViewBag.Title = "Customers";
-    var movies = Model.Movies;
+    var movies = Model;
 }
 <div class="row">
     <table class="table table-bordered table-hover"  style="margin-top: 100px;">
         <th>Movies</th>
+        <th>Genre</th>
         @foreach (var movie in movies)
         {
             <tr>
-                <td>@movie.Name</td>
+                <td>@Html.ActionLink(movie.Name, "Details", "Movies", new { id = movie.Id }, null)</td>
+                <td>@movie.Genre.Name</td>
             </tr>
         }
     </table>
